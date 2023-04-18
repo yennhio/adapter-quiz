@@ -12,8 +12,10 @@ public class Stripe implements Payment {
         this.expirationDate = expirationDate;
     }
     @Override
-    public void process() {
+    public void processPayment() {
         System.out.println("Paid using Stripe: $" + paymentAmount);
+        System.out.println("Processing cardholder name... " + cardholderName.charAt(0) + "-----");
+        System.out.println("Processing exp date... " + expirationDate.charAt(0) + "----");
     }
     
 }

@@ -9,8 +9,10 @@ public class Square implements Payment {
     }
 
     @Override
-    public void process() {
+    public void processPayment() {
         System.out.println("Paid using Square: $" + paymentAmount);
+        System.out.println("Verifying location... " + locationID.charAt(0) + "--");
+
     }
     
 }

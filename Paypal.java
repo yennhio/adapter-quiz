@@ -9,8 +9,10 @@ public class Paypal implements Payment {
     }
 
     @Override
-    public void process() {
+    public void processPayment() {
         System.out.println("Paid using Paypal: $" + paymentAmount);
+        System.out.println("Processing email..." + userEmail.charAt(0) + "----------");
     }
-    
+
+
 }
